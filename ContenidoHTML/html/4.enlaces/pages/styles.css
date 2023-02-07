@@ -1,0 +1,32 @@
+body{
+    background-color: rgba(94, 198, 163, 0.543);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+caption{
+    margin: 3%;
+    font-size: 200%;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+}
+
+th, td{
+  border: solid 1px rgb(5, 120, 85);  
+  padding: 0.5%;
+}
+
+thead{
+    background-color: rgb(244, 176, 93);
+}
+tr:nth-child(even){
+    background-color: #dddd;
+}
+
+tr:hover td{
+    background-color: rgb(33, 181, 157);
+    color: rgb(22, 11, 11);
+}

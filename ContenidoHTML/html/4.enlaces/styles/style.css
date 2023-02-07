@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    border: 2px solid rebeccapurple;
+    margin: 20px; 
+    padding: 10px 20px 2px 5px;
+}
+
+div{
+    width: 80%;
+
+}
+
+img{
+    border: 1px solid yellowgreen;
+    image-rendering: pixelated; /* Esta propiedad me permite escalar y que no deforme la imagen. */
+    width: 50%;
+    height: auto;
+
+}
+
+#imagenes{
+    border: 2px solid salmon;
+    width:  200px;
+    height: 200px;
+}
+
+/*margin en es borde externo
+paddignh en el margen interno del elemento hacia el borde
+with archo del elemento
+heigh 

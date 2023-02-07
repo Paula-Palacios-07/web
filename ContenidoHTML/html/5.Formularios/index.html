@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1 name="name">Formularios</h1>
+    <form action="./receive.php" id="form" method="post">
+        <label for="name">Nombres:</label>
+        <input type="text" value="Hola" id="name" 
+        placeholder="Introdusca su nombre" 
+        maxlength="25" 
+        minlength="3"
+        required
+        title="Error en los datos"
+        autofocus="true"
+        autocomplete="off"
+        spellcheck="true"
+        tabindex="1"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" placeholder="Ingrese su edad" min="18" max="65"><br><br>
+        <label for="main">Correo:</label>
+        <input type="email" id="mail" placeholder="Introduzca su corre"><br><br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="pass"><br><br>
+        <label for="date">Fecha</label>
+        <input type="date" name="fecha" id="fecha" placeholder="Introduzca la fecha">
+        <label for="color"></label>
+        <input type="color"><br><br>
+        <label for="mes">Mes</label>
+        <input type="month" id="mes">
+        <datalist id="dalalist">
+            <option value="Enero"></option>
+            <option value="Febrero"></option>
+        </datalist>
+        <hr>
+        <fieldset>
+            <!--Agrupar inputs-->
+            <legend>Estado civil</legend>
+            <input type="radio" name="estado" value="casado">Casado
+            <input type="radio" name="estado" value="soltero">soltero
+            <input type="radio" name="estado" value="viudo">Viudo
+        </fieldset>
+        <label for="lenguajes">Lenguajes de progamacion</label>
+        <select name="lenguajes" id="lenguajes">
+            <optgroup label="Backend">
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="ruby">Ruby</option>
+        <optgroup label="Frontend">
+            <optgroup>
+                <option value="javascript">JavaScript</option>
+                <option value="css">CSS</option>
+                <option value="ts">TyScript</option>
+            </optgroup>  
+        </select>
+        <br><label for="termino">¿Acepta Términos y Condiciones?</label><br>
+        <input type="checkbox" name="termino" id="termino">
+        <br><input type="submit" id="envio" value="Enviar"><br>
+        <button id="enviar" type="submit">Enviar datos</button>
+    </form>
+        
+    <script src="./main.js"></script>
+</body>
+</html>

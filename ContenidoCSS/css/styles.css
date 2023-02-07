@@ -1,0 +1,81 @@
+/*
+Selector por etiqueta: cambia el estiloa todas las etiquetas
+Selector por clase: cambia el estilo de quien tiene la clase
+Selector por id: modifica el estilo de quienes tienen el nombre del id
+selector por sufijos $
+selector por prefijos ^^
+Seleccion de hermanos ~
+Desendencia 
+*/
+/*
+
+.container{
+    width: 95%;
+    height: auto;
+    padding: 3px;
+    text-align: center;
+    margin: 3px;
+    font-size: 20px;
+
+}
+.titulo{
+    border: 2px dotted;
+    background-color: rgb(154, 130, 177);
+    text-align: right;
+    padding: 5px;
+}
+
+/*Agrupacion de selectores*/
+
+/*
+h2, .seccion{
+text-align: right;
+}
+*/
+
+
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+[class]{
+background-color: rgb(31, 135, 161);
+}
+
+#div1{
+    background-color: beige;
+}
+
+a[href]{
+    text-align: left;
+    margin-left: 4%;
+    color: rgb(122, 0, 122);
+}
+
+/*Utilizando sufijos*/
+a[href$=".co"]{
+    color: darksalmon;
+    padding: 10px;
+}
+
+/*Utilizando prefijos*/
+[class^="ca"]{
+    background: rebeccapurple;
+}
+
+/*Hermanos*/
+.seccion ~ div{
+    color: rgb(38, 50, 212);
+    font-size: 30px;
+}
+
+/*Hijos*/
+.container>section{
+    background-color: crimson;
+    padding: 15px;
+}
+
+.menu ul li>a{
+color: orange;
+
+}
