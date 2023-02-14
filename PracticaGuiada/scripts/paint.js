@@ -35,7 +35,7 @@ const addStudent = (name,lastName,avg) => {
     prom : avg
    }
    students.push(student);
-   alert('Se agrego estudiante');
+   modalAlert('Se agrego corectamente');
 };
   const modalAlert=(cad)=>{
   console.log(cad);
@@ -56,5 +56,6 @@ const addStudent = (name,lastName,avg) => {
  }
 
 }
+
 
 export {paintCard,addStudent,modalAlert}

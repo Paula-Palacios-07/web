@@ -10,6 +10,7 @@ const btnMostrar = document.getElementById('btnMostrar');
   3. Mediante el evento addEvent.....
 */
 
+
 btnAgregar.onclick = function (){
     //console.log('Evento mediante propiedad');
     const name = document.getElementById('nombre').value;
@@ -33,4 +34,6 @@ if(validateString(name) && validateString(lastName) && op != 0){
 }
 btnMostrar.addEventListener("click", function(){
   paintCard("ESTUDIANTE");
+
 });
+
