@@ -1,5 +1,5 @@
 import{ validateString, vAvg, checkAvg} from './validate.js';
-import{paintCard, addStudent} from './paint.js';
+import{paintCard, addStudent,modalAlert} from './paint.js';
 
 const btnAgregar = document.getElementById('btnAgregar');
 const btnMostrar = document.getElementById('btnMostrar');
@@ -14,11 +14,23 @@ btnAgregar.onclick = function (){
     //console.log('Evento mediante propiedad');
     const name = document.getElementById('nombre').value;
     const lastName = document.getElementById('apellido').value;
-    const avg = document.getElementById('promedio').value;
+    const avg = parseFloat(document.getElementById('promedio').value);
     const op = document.getElementById('opcion').value;
-    console.log(`${name} ${lastName} ${avg} ${op}`);
+    //console.log(`${name} ${lastName} ${avg} ${op}`);
+
+
+if(validateString(name) && validateString(lastName) && op != 0){
+   if((!isNaN(avg)) && (vAvg(avg))){
+    addStudent(name,lastName,avg)
+   }else{
+    document.querySelector('#promedio').value="";
+    modalAlert("Promedio Invalido");
+   }
+
+}else{
+  modalAlert("Datos invalidos, revisar los datos");
 }
-
-//if(validateString(name) && validateString(lastName) && opcion != 0){
-
-//}
+}
+btnMostrar.addEventListener("click", function(){
+  paintCard("ESTUDIANTE");
+});

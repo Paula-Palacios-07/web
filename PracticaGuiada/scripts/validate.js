@@ -1,6 +1,7 @@
 const validateString = (cad)=>{
-    //Ternario: abreviacion del if else
-    let response =(cad.lenght>3) ? true :false;
+    //Ternario: abreviacion del if else    
+    let response =(cad.length>=3) ? true : false;
+    console.log(response);
     return response;
 }
 
