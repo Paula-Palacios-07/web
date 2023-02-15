@@ -21,8 +21,17 @@
     </header>
     
     <form class="form">
-        <h2>Registro</h2>
-        <label for="nombre">Nombres:</label>
+        <h2>Registro</h2><br>
+
+        <select class="control-s" name="opcion" id="opcion">
+            <option value="0" selected>Seleccione una opción</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="profesor">Profesor</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="egredado">Egresado</option>
+        </select>
+
+        <label class="valor_1" for="nombre">Nombres:</label>
         <input
         class="control"
         id="nombre"
@@ -31,7 +40,7 @@
         type="text"                    
         required
         />
-        <label for="apellido">Apellidos:</label>
+        <label class="valor_2" for="apellido">Apellidos:</label>
         <input
         class="control"
         id="apellido"
@@ -40,22 +49,16 @@
         type="text"                    
         required
         />
-        <label for="promedio">Promedio:</label>
+        <label class="valor_3" for="promedio">Promedio / Edad:</label>
         <input
             class="control"
             id="promedio"
             name="promedio"
-            placeholder="Ingrese su promedio"
+            placeholder="Ingrese su promedio / edad"
             type="number"                    
             required
         />
-        <select class="control-s" name="opcion" id="opcion">
-            <option value="0" selected>Seleccione una opción</option>
-            <option value="estudiante">Estudiante</option>
-            <option value="profesor">Profesor</option>
-            <option value="administrativo">Administrativo</option>
-            <option value="egredado">Egresado</option>
-        </select>
+        
         <button type="button" class="btn" id="btnAgregar">Agregar</button>
         <button type="button" class="btn" id="btnMostrar">Mostrar</button>
     </form>
@@ -74,10 +77,11 @@
             </div>       
     </template>
     <template id="templateProfesor">      
-            <div class="card-body">
-                <h3>nombre y apellidos</h3>
-                <h6>Profesíon</h6>
-                <p class="lead">Edad</p>
+            <div class="card">
+                <h3 class="title-card"></h3>
+                <h4 class="data-card"></h4>
+                <p class="text-promedio"></p>
+                <button class="btnRegistrar">Registrar</button>                
             </div>       
     </template>
 
