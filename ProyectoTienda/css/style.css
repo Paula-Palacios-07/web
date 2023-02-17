@@ -252,6 +252,15 @@ font-size: 60px;
     text-align: left;
     padding: 5px;
   }
+
+  .is-valid{
+    background-color: #FFD1DC !important;
+    border-bottom: 1px solid #FF004E !important;
+  }
+  .is-invalid{
+    border-bottom: 5px solid #f81818 !important;
+  }
+  
   .button_send, .button_clear{
     display: inline;
     width: 30%;
@@ -318,6 +327,27 @@ font-size: 60px;
   .nets{
     width: 40px;
   }
+
+  #checkPolitica{
+    appearance: none;
+    border: 2px solid #FF004E;
+  }
+  #checkPolitica:checked {
+    background-color: #FFD1DC;
+  }
+  #checkPolitica:focus {
+    border-color: #4b4949;
+  }
+  
+  .checkPolitica{  
+    width: 7%;
+    display: inline-block;
+  }
+  .labelkPolitica{
+    width: 70%;
+    display: inline-block;
+  }
+  
   
 
 
