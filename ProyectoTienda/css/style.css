@@ -167,7 +167,7 @@ body{
     color: #ffffff;  
     cursor: pointer;
 }
-.container_history .text_history{ 
+.container_history .text_history, .text-acerca{ 
     font-size: 20px;
 }
 .subTitle{ 
@@ -347,8 +347,50 @@ font-size: 60px;
     width: 70%;
     display: inline-block;
   }
+
+  @media(max-width:1020px){
+  .item>li{
+    display: inline-block;
+    padding: 0% 2%;
+    list-style: none;
+    font-size: 17px;
+
+}
+.container_p .offert{
+    width: 85%;
+    font-size: 22px;
+    padding: 1.0%;
+}
+.container_p h1{
+    width: 38%;
+    font-size: 50px;
+    font-weight: 500;
+ }
+
+}
+@media(max-width:886px){
+  .buscarVisible{
+    margin-right: 5px;
+    padding: 8px;
+}
+.subTitle{ 
+  font-size: 32px;
+  margin-top: 16px;
+  margin-bottom: 26px;
+  padding: 8px;
+}
+.container_history, .text-acerca{ 
+  font-size: 20px;
+}
+.service .subService{
+  font-size: 20px;
+}
+.subService > p{
+  font-size: 16px;
+}
+}
   
-  
+
 
 
 
